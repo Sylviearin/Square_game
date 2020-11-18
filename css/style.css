@@ -1,0 +1,64 @@
+.body-wrapper {
+  width: 60vw;
+  height: 80vh;
+  margin: auto; }
+
+.header {
+  height: 20vh; }
+  .header .header-text {
+    color: #474747; }
+
+.manage-bar {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .manage-bar .status-bar {
+    display: flex; }
+  .manage-bar .label-direction {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px; }
+    .manage-bar .label-direction .points-status, .manage-bar .label-direction .time-status {
+      text-align: center;
+      color: #474747; }
+  .manage-bar .manage-buttons-bar {
+    display: flex; }
+    .manage-bar .manage-buttons-bar .manage-button {
+      border: 2px solid #111111;
+      color: #474747;
+      margin: 0 0 8px 8px;
+      border-radius: 20%/50%; }
+
+.game-area-wrapper {
+  display: flex;
+  justify-content: space-between; }
+
+.game-area {
+  width: 60%;
+  height: 60vh;
+  border: 2px solid #474747;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr); }
+  .game-area div {
+    background-color: aqua;
+    border: 1px solid #474747; }
+
+.record-area {
+  width: 30%;
+  margin-left: 10px;
+  border: 2px solid #474747;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-self: baseline; }
+  .record-area .record-area-header {
+    text-align: center;
+    color: #474747; }
+  .record-area ol > li {
+    padding: 0.5rem 0.25rem; }
+
+/*# sourceMappingURL=style.css.map */

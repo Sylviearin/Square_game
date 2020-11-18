@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cube game</title>
+  </head>
+
+  <body class="body-wrapper">
+
+  <!-- Modal -->
+  <div class="modal fade" id="saveResult" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Your score: <span></span></p>
+          <label>Name:
+            <input class="form-control" maxlength="10">
+          </label>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="gameSquare.saveResult()">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <header class="header">
+      <h1 class="header-text">Cube Game</h1>
+
+      <div class="manage-bar">
+
+        <div class="manage-buttons-bar">
+          <button class="manage-button btn" onclick="gameSquare.start(), gameSquare.startTimer();">START</button>
+        </div>
+
+
+        <label class="label-direction">Points
+          <input type="text" id="points" class="points-status" value="0" size="4" readonly>
+        </label>
+        <label class="label-direction"> Time left
+          <input type="text" id="timeRemaining" class="time-status" value="01:00" size="4" readonly>
+        </label>
+      </div>
+
+    </header>
+
+    <main class="main-wrapper">
+
+      <div class="game-area-wrapper">
+
+        <div id="gameField" class="game-area"></div>
+
+        <div class="record-area">
+          <h2 class="record-area-header">Result Table</h2>
+          <ol class="list-group">
+            <li class="list-group-item"><span></span></li>
+            <li class="list-group-item"><span></span></li>
+            <li class="list-group-item"><span></span></li>
+            <li class="list-group-item"><span></span></li>
+            <li class="list-group-item"><span></span></li>
+            <li class="list-group-item"><span></span></li>
+            <li class="list-group-item"><span></span></li>
+            <li class="list-group-item"><span></span></li>
+            <li class="list-group-item"><span></span></li>
+            <li class="list-group-item"><span></span></li>
+          </ol>
+        </div>
+
+      </div>
+    </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <script src="index_class.js"></script>
+  </body>
+</html>
